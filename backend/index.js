@@ -1,22 +1,23 @@
-const express = require("express");
+const dns = require("node:dns");
 
-const app = express();
-
-// Middleware
-app.use(express.json());
-
-// Health check API
-app.get("/api/health", (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: "GramSathi AI Backend is running!"
-    });
-});
-
-// Server configuration
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+require("dotenv").config();
+const app = require("./src/app");
+const connectDB = require("./src/config/database");
 const PORT = process.env.PORT || 5000;
+const startServer = async () => {
+  try {
+    await connectDB();
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`GramSathi AI Backend running on port ${PORT}`);
-});
+    app.listen(PORT, () => {
+      console.log(
+        `GramSathi AI Server running on port ${PORT}`
+      );
+    });
+  } catch (error) {
+    console.error("Server startup failed:", error.message);
+    process.exit(1);
+  }
+};
+
+startServer();
