@@ -1,0 +1,150 @@
+{
+  "info": {
+    "name": "GramSathi AI Service",
+    "_postman_id": "gramsathi-ai-service-v1",
+    "description": "Internal AI service API collection for FarmSathi AI and NyayaSathi AI.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000" },
+    { "key": "apiKey", "value": "your-ai-service-api-key" }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      }
+    },
+    {
+      "name": "List Canonical States",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }],
+        "url": "{{baseUrl}}/api/v1/meta/states"
+      }
+    },
+    {
+      "name": "FarmSathi Chat (English)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-fs-en-001\",\n  \"conversationId\": \"conv-101\",\n  \"message\": \"Who is eligible for PM-KISAN income support?\",\n  \"language\": \"en\",\n  \"history\": [],\n  \"context\": { \"state\": \"Bihar\", \"crop\": \"Wheat\" },\n  \"attachments\": []\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/farmsathi/chat"
+      }
+    },
+    {
+      "name": "FarmSathi Chat (Hindi)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-fs-hi-001\",\n  \"conversationId\": \"conv-102\",\n  \"message\": \"पीएम-किसान योजना का लाभ किसे मिलता है?\",\n  \"language\": \"hi\",\n  \"history\": [],\n  \"context\": { \"state\": \"Uttar Pradesh\", \"crop\": \"Wheat\" },\n  \"attachments\": []\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/farmsathi/chat"
+      }
+    },
+    {
+      "name": "NyayaSathi Chat (With State)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-ns-001\",\n  \"conversationId\": \"conv-201\",\n  \"message\": \"How can I file a consumer complaint under the Consumer Protection Act 2019?\",\n  \"language\": \"en\",\n  \"history\": [],\n  \"context\": { \"country\": \"India\", \"state\": \"Bihar\", \"category\": \"Consumer Rights\" },\n  \"attachments\": []\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/nyayasathi/chat"
+      }
+    },
+    {
+      "name": "NyayaSathi Chat (Missing State -> needs_clarification)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-ns-002\",\n  \"conversationId\": \"conv-202\",\n  \"message\": \"What are the tenant eviction rules under state rent control law?\",\n  \"language\": \"en\",\n  \"history\": [],\n  \"context\": { \"country\": \"India\", \"state\": null, \"category\": \"Property\" },\n  \"attachments\": []\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/nyayasathi/chat"
+      }
+    },
+    {
+      "name": "State-Name Normalization Example (UP / बिहार)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-norm-001\",\n  \"conversationId\": \"conv-203\",\n  \"message\": \"How do I apply for free legal aid through NALSA?\",\n  \"language\": \"en\",\n  \"history\": [],\n  \"context\": { \"country\": \"India\", \"state\": \"UP\", \"category\": \"Legal Aid\" },\n  \"attachments\": []\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/nyayasathi/chat"
+      }
+    },
+    {
+      "name": "Auth Failure (401 Unauthorized)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "wrong-key" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-auth-fail\",\n  \"conversationId\": \"conv-401\",\n  \"message\": \"Hello\",\n  \"language\": \"en\"\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/farmsathi/chat"
+      }
+    },
+    {
+      "name": "Validation Error (422 Non-empty Attachments)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-val-422\",\n  \"conversationId\": \"conv-422\",\n  \"message\": \"Please check this image\",\n  \"language\": \"en\",\n  \"attachments\": [\"crop.jpg\"]\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/farmsathi/chat"
+      }
+    },
+    {
+      "name": "Rate-Limit Error Reference (429 LLM_RATE_LIMITED)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "AI-Service-Api-Key", "value": "{{apiKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"requestId\": \"req-429-ref\",\n  \"conversationId\": \"conv-429\",\n  \"message\": \"Who is eligible for PM-KISAN?\",\n  \"language\": \"en\",\n  \"context\": { \"state\": \"Bihar\", \"crop\": \"Wheat\" }\n}"
+        },
+        "url": "{{baseUrl}}/api/v1/farmsathi/chat",
+        "description": "When the upstream LLM returns HTTP 429, this endpoint returns HTTP 429 with {\"requestId\":\"...\",\"error\":{\"code\":\"LLM_RATE_LIMITED\",\"message\":\"...\",\"retryable\":true}}."
+      }
+    }
+  ]
+}

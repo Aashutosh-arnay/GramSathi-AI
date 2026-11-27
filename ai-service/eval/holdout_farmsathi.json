@@ -1,0 +1,137 @@
+[
+  {
+    "id": "fsh-01",
+    "category": "basic",
+    "language": "en",
+    "question": "How is financial assistance transferred to farmers under PM-KISAN and what are the three instalments?",
+    "context": {"state": "Madhya Pradesh", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["pmkisan_operational_guidelines.pdf", "pmkisan_faq.pdf"]
+  },
+  {
+    "id": "fsh-02",
+    "category": "basic",
+    "language": "en",
+    "question": "What seed rate and row spacing are recommended for timely sown wheat in India?",
+    "context": {"state": "Uttar Pradesh", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_iiwbr_wheat_pocket_guide.pdf"]
+  },
+  {
+    "id": "fsh-03",
+    "category": "basic",
+    "language": "en",
+    "question": "How are soil testing laboratories supported under the NMSA Soil Health Management guidelines?",
+    "context": {"state": "Rajasthan", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["nmsa_soil_health_management_guidelines.pdf"]
+  },
+  {
+    "id": "fsh-04",
+    "category": "complex",
+    "language": "en",
+    "question": "What weed control and nutrient management practices are recommended for Direct Seeded Rice?",
+    "context": {"state": "Punjab", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_crri_direct_seeded_rice.pdf"]
+  },
+  {
+    "id": "fsh-05",
+    "category": "complex",
+    "language": "en",
+    "question": "What cultural and biological control measures are included in the PPQS Integrated Pest Management package for wheat?",
+    "context": {"state": "Haryana", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["ppqs_ipm_wheat.pdf"]
+  },
+  {
+    "id": "fsh-06",
+    "category": "bilingual",
+    "language": "en",
+    "question": "What are the main diseases of rice listed in the IPM package?",
+    "context": {"state": "Odisha", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["ppqs_ipm_rice.pdf"]
+  },
+  {
+    "id": "fsh-07",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "आईपीएम (IPM) पैकेज के अनुसार धान की फसल में लगने वाले प्रमुख रोग कौन-कौन से हैं?",
+    "context": {"state": "Odisha", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["ppqs_ipm_rice.pdf"]
+  },
+  {
+    "id": "fsh-08",
+    "category": "missing_context",
+    "language": "en",
+    "question": "My plants are wilting and showing spots, what should I do?",
+    "context": {},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-09",
+    "category": "missing_context",
+    "language": "hi",
+    "question": "मेरे खेत में कीड़े लग गए हैं, मुझे कौन सा उपाय करना चाहिए?",
+    "context": {},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-10",
+    "category": "no_source",
+    "language": "en",
+    "question": "How is crop loss assessed for localized calamities under PMFBY insurance?",
+    "context": {"state": "Maharashtra", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-11",
+    "category": "no_source",
+    "language": "hi",
+    "question": "कल लखनऊ में मौसम का हाल और बारिश की संभावना क्या है?",
+    "context": {"state": "Uttar Pradesh", "district": "Lucknow"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-12",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "What are the eligibility rules for filing an RTI application against a government office?",
+    "context": {"state": "Bihar"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-13",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "भारत की राजधानी दिल्ली के प्रमुख पर्यटन स्थल कौन से हैं?",
+    "context": {},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-14",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "What is the recommended spray dose of AgroMax-707 pesticide for rice stem borer?",
+    "context": {"state": "Bihar", "crop": "Rice"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fsh-15",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "केंद्र सरकार की 'किसान ड्रोन मुफ्त बैटरी योजना 2026' के तहत कितना अनुदान मिलता है?",
+    "context": {"state": "Punjab", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  }
+]

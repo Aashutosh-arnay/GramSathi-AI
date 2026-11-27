@@ -130,8 +130,7 @@ class RetrievalService:
             )
 
         logger.info(
-            "search('%s…') → %d/%d chunks above threshold %.2f",
-            query[:40],
+            "Retrieval returned %d/%d chunks above threshold %.2f",
             len(chunks),
             len(documents),
             self._threshold,

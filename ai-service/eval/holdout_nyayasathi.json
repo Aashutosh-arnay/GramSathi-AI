@@ -1,0 +1,137 @@
+[
+  {
+    "id": "nsh-01",
+    "category": "basic",
+    "language": "en",
+    "question": "What rights does a consumer have under the Consumer Protection Act 2019?",
+    "context": {"country": "India", "state": "Bihar", "category": "Consumer Rights"},
+    "expected_status": "supported",
+    "expected_source_files": ["consumer_protection_act_2019.pdf"]
+  },
+  {
+    "id": "nsh-02",
+    "category": "basic",
+    "language": "en",
+    "question": "What is the time limit for a Public Information Officer to reply to an RTI request under the RTI Act 2005?",
+    "context": {"country": "India", "state": "Delhi", "category": "Other"},
+    "expected_status": "supported",
+    "expected_source_files": ["rti_act_2005_en.pdf"]
+  },
+  {
+    "id": "nsh-03",
+    "category": "basic",
+    "language": "en",
+    "question": "Is an award passed by a Lok Adalat final and binding on the parties under NALSA regulations?",
+    "context": {"country": "India", "state": "Rajasthan", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_lok_adalat_regulations_2009.pdf"]
+  },
+  {
+    "id": "nsh-04",
+    "category": "complex",
+    "language": "en",
+    "question": "What is the role of the Legal Services Clinic or panel lawyer when someone applies under NALSA Free and Competent Legal Services Regulations 2010?",
+    "context": {"country": "India", "state": "Uttar Pradesh", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_free_competent_legal_services_2010.pdf"]
+  },
+  {
+    "id": "nsh-05",
+    "category": "complex",
+    "language": "en",
+    "question": "What service standards and grievance redressal timelines are listed in the Department of Consumer Affairs Citizen's Charter?",
+    "context": {"country": "India", "state": "Maharashtra", "category": "Consumer Rights"},
+    "expected_status": "supported",
+    "expected_source_files": ["consumeraffairs_citizen_charter_2025_26.pdf"]
+  },
+  {
+    "id": "nsh-06",
+    "category": "bilingual",
+    "language": "en",
+    "question": "What is the NALSA SOP for premature release, parole and furlough of prisoners?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_parole_furlough_sop_2022.pdf"]
+  },
+  {
+    "id": "nsh-07",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "कैदियों की समयपूर्व रिहाई, पैरोल और फरलो के लिए NALSA की मानक संचालन प्रक्रिया (SOP) क्या है?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_parole_furlough_sop_2022.pdf"]
+  },
+  {
+    "id": "nsh-08",
+    "category": "state_specific",
+    "language": "en",
+    "question": "How can I apply for land mutation under my state land revenue rules?",
+    "context": {"country": "India", "state": null, "category": "Property"},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-09",
+    "category": "state_specific",
+    "language": "hi",
+    "question": "मेरे राज्य के भूमि राजस्व और किराया कानून के तहत पंजीकरण कैसे होता है?",
+    "context": {"country": "India", "state": null, "category": "Property"},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-10",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the punishment for cheque bounce under Section 138 of the Negotiable Instruments Act?",
+    "context": {"country": "India", "state": "Bihar", "category": "Civil"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-11",
+    "category": "no_source",
+    "language": "hi",
+    "question": "फैक्ट्री मजदूरों के लिए न्यूनतम मजदूरी और पीएफ (EPF) के नियम क्या हैं?",
+    "context": {"country": "India", "state": "Maharashtra", "category": "Labour"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-12",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "What are the recommended NPK fertilizer doses for wheat cultivation?",
+    "context": {"country": "India", "state": "Punjab"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-13",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "धान की फसल में खरपतवार नियंत्रण कैसे किया जाता है?",
+    "context": {"country": "India", "state": "Bihar"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-14",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "Under Section 650A of the Consumer Protection Act, how many days does a seller have to pay compensation?",
+    "context": {"country": "India", "state": "Bihar", "category": "Consumer Rights"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "nsh-15",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "सूचना का अधिकार अधिनियम की धारा 912C के तहत जुर्माने की राशि क्या है?",
+    "context": {"country": "India", "state": "Delhi", "category": "Other"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  }
+]

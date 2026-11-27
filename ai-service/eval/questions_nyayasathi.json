@@ -1,0 +1,227 @@
+[
+  {
+    "id": "ns-01",
+    "category": "basic",
+    "language": "en",
+    "question": "How can a consumer file a complaint before the District Consumer Disputes Redressal Commission under the Consumer Protection Act 2019?",
+    "context": {"country": "India", "state": "Bihar", "category": "Consumer Rights"},
+    "expected_status": "supported",
+    "expected_source_files": ["consumer_protection_act_2019.pdf"]
+  },
+  {
+    "id": "ns-02",
+    "category": "basic",
+    "language": "en",
+    "question": "How does a Lok Adalat work and what cases can be settled there under NALSA Lok Adalat Regulations 2009?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_lok_adalat_regulations_2009.pdf"]
+  },
+  {
+    "id": "ns-03",
+    "category": "basic",
+    "language": "en",
+    "question": "How can an eligible citizen apply for free legal services under the NALSA Free and Competent Legal Services Regulations 2010?",
+    "context": {"country": "India", "state": "Uttar Pradesh", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_free_competent_legal_services_2010.pdf"]
+  },
+  {
+    "id": "ns-04",
+    "category": "basic",
+    "language": "en",
+    "question": "How can a person request information from a public authority under the Right to Information Act 2005?",
+    "context": {"country": "India", "state": "Delhi", "category": "Other"},
+    "expected_status": "supported",
+    "expected_source_files": ["rti_act_2005_en.pdf"]
+  },
+  {
+    "id": "ns-05",
+    "category": "basic",
+    "language": "en",
+    "question": "What is the procedure for redressal of public grievances under the NALSA Standard Operating Procedure?",
+    "context": {"country": "India", "state": "Rajasthan", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_public_grievance_sop.pdf"]
+  },
+  {
+    "id": "ns-06",
+    "category": "complex",
+    "language": "en",
+    "question": "What are the pecuniary jurisdiction limits of District, State, and National Consumer Commissions under the Consumer Protection Act 2019?",
+    "context": {"country": "India", "state": "Maharashtra", "category": "Consumer Rights"},
+    "expected_status": "supported",
+    "expected_source_files": ["consumer_protection_act_2019.pdf"]
+  },
+  {
+    "id": "ns-07",
+    "category": "complex",
+    "language": "en",
+    "question": "What exemptions from disclosure of information exist under the RTI Act 2005 and how can an appeal be filed?",
+    "context": {"country": "India", "state": "Karnataka", "category": "Other"},
+    "expected_status": "supported",
+    "expected_source_files": ["rti_act_2005_en.pdf"]
+  },
+  {
+    "id": "ns-08",
+    "category": "complex",
+    "language": "en",
+    "question": "What legal aid services and support does NALSA provide for widows living in shelter homes?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_widows_access_to_justice.pdf"]
+  },
+  {
+    "id": "ns-09",
+    "category": "bilingual",
+    "language": "en",
+    "question": "How can I apply for free legal aid through NALSA?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_free_competent_legal_services_2010.pdf"]
+  },
+  {
+    "id": "ns-10",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "NALSA के माध्यम से मुफ्त कानूनी सहायता (Free Legal Aid) के लिए आवेदन कैसे करें?",
+    "context": {"country": "India", "state": "Bihar", "category": "Legal Aid"},
+    "expected_status": "supported",
+    "expected_source_files": ["nalsa_free_competent_legal_services_2010.pdf"]
+  },
+  {
+    "id": "ns-11",
+    "category": "bilingual",
+    "language": "en",
+    "question": "How do I file an RTI application to get government information?",
+    "context": {"country": "India", "state": "Madhya Pradesh", "category": "Other"},
+    "expected_status": "supported",
+    "expected_source_files": ["rti_act_2005_en.pdf"]
+  },
+  {
+    "id": "ns-12",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "सरकारी विभाग से सूचना का अधिकार (RTI Act 2005) के तहत जानकारी कैसे मांगें?",
+    "context": {"country": "India", "state": "Madhya Pradesh", "category": "Other"},
+    "expected_status": "supported",
+    "expected_source_files": ["rti_act_2005_en.pdf"]
+  },
+  {
+    "id": "ns-13",
+    "category": "state_specific",
+    "language": "en",
+    "question": "What are the tenant eviction rules under the state rent control law?",
+    "context": {"country": "India", "state": null, "category": "Property"},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-14",
+    "category": "state_specific",
+    "language": "hi",
+    "question": "राज्य के किराया नियंत्रण कानून के तहत मकान मालिक किरायेदार को कब खाली करा सकता है?",
+    "context": {"country": "India", "state": null, "category": "Property"},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-15",
+    "category": "state_specific",
+    "language": "en",
+    "question": "What are the specific rules for agricultural land mutation (dakhil-kharij) in Bihar?",
+    "context": {"country": "India", "state": "Bihar", "category": "Property"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-16",
+    "category": "no_source",
+    "language": "en",
+    "question": "How do I apply for anticipatory bail in a criminal case?",
+    "context": {"country": "India", "state": "Bihar", "category": "Criminal"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-17",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the procedure for mutual consent divorce under the Hindu Marriage Act?",
+    "context": {"country": "India", "state": "Uttar Pradesh", "category": "Family"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-18",
+    "category": "no_source",
+    "language": "hi",
+    "question": "अगर पुलिस FIR दर्ज करने से मना कर दे तो क्या कानूनी उपाय हैं?",
+    "context": {"country": "India", "state": "Bihar", "category": "Criminal"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-19",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the minimum wage and EPF contribution rule for factory workers?",
+    "context": {"country": "India", "state": "Maharashtra", "category": "Labour"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-20",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "When should I apply urea fertilizer to my wheat crop?",
+    "context": {"country": "India", "state": "Punjab"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-21",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "Can you write a Python script to sort a list of numbers?",
+    "context": {"country": "India", "state": "Delhi"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-22",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "गेहूँ की फसल में पीला रतुआ रोग की रोकथाम कैसे करें?",
+    "context": {"country": "India", "state": "Haryana"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-23",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "What is the penalty under Section 999 of the Consumer Protection Act?",
+    "context": {"country": "India", "state": "Bihar", "category": "Consumer Rights"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-24",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "What did the Supreme Court rule in Ramesh Kumar vs State of Bihar 2025 regarding Section 88Z of the RTI Act?",
+    "context": {"country": "India", "state": "Bihar", "category": "Other"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "ns-25",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "उपभोक्ता संरक्षण अधिनियम की धारा 777B के तहत ऑनलाइन धोखाधड़ी पर कितना जुर्माना है?",
+    "context": {"country": "India", "state": "Uttar Pradesh", "category": "Consumer Rights"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  }
+]

@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "fsh-01",
+    "module": "farmsathi",
+    "category": "basic",
+    "language": "en",
+    "question": "How is financial assistance transferred to farmers under PM-KISAN and what are the three instalments?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "pmkisan_operational_guidelines.pdf",
+      "pmkisan_faq.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines",
+        "url": "https://pmkisan.gov.in/Documents/OPERATIONAL%20GUIDELINES.pdf"
+      },
+      {
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management",
+        "url": "https://agriwelfare.gov.in/sites/default/files/NMSA%20-%20Guidelines%20updated%20on%2009.02.2017%20%20.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6395,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      },
+      {
+        "score": 0.6217,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.6186,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Wheat | State: Madhya Pradesh RECENT HISTORY: (none) CONTEXT: [Source: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines | Ministry of Agriculture & Farmers Welfare, Government of India] y State) (a) Beneficiaries under the scheme are to be identified by the respective State and Union Territory. The details of farmers are being maintained by the States/UTs either in …\n\n2. [Source: National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management | Department of Agriculture, Cooperation & Farmers Welfare, Ministry of Agriculture & Farmers Welfare, Government of India] intenance etc. 14. Basic Considerations: (i) The financial assistance @ Rs. 4000/- per trainee per week shall be provided to the institutions identified for …\n\n3. [Source: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines | Ministry of Agriculture & Farmers Welfare, Government of India] 1 “Pradhan Mantri KIsan SAmman Nidhi (PM-KISAN)” OPERATIONAL GUIDELINES 1. Scheme The Government with a view to augment the income of the Small and Marginal farmers has approved a Central Sector Scheme, namely, “Pradhan Mantri KIsan SAmman Nidhi (PM- …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-02",
+    "module": "farmsathi",
+    "category": "basic",
+    "language": "en",
+    "question": "What seed rate and row spacing are recommended for timely sown wheat in India?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "icar_iiwbr_wheat_pocket_guide.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)",
+        "url": "https://iiwbr.org.in/wp-content/uploads/2023/08/EB-52-Wheat-Cultivation-in-India-Pocket-Guide.pdf"
+      },
+      {
+        "title": "AESA Based IPM Package - Wheat",
+        "url": "https://www.ppqs.gov.in/sites/default/files/wheat.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.789,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      },
+      {
+        "score": 0.7492,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      },
+      {
+        "score": 0.7433,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Wheat | State: Uttar Pradesh RECENT HISTORY: (none) CONTEXT: [Source: Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52) | ICAR - Directorate of Wheat Research (IIWBR), Karnal] bed of 70-75cm with furrow of 30-35 cm. Inter cropping of sugarcane can be taken up with wheat by this technique. Crop cultivars are known to vary significantly in their performance on raised beds. …\n\n2. [Source: Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52) | ICAR - Directorate of Wheat Research (IIWBR), Karnal] as also reached a threshold in many soils since farmers are mainly applying nitrogen and phosphorus 7 Wheat Cultivation in India Table 3. Zone-wise sowing time, seed rate and fertilizer dose for wheat crop Zone Sowing conditions Seed rate Fertilizer doses and time …\n\n3. [Source: Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52) | ICAR - Directorate of Wheat Research (IIWBR), Karnal] will affect germination adversely and productivity will be less. So fertilizers should be placed deeper than seed if sown with seed cum fertilizer drill. 31 Wheat Cultivation in India Irrigation The pre sowing irrigation in October followed by as per requirement …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-03",
+    "module": "farmsathi",
+    "category": "basic",
+    "language": "en",
+    "question": "How are soil testing laboratories supported under the NMSA Soil Health Management guidelines?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "nmsa_soil_health_management_guidelines.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management",
+        "url": "https://agriwelfare.gov.in/sites/default/files/NMSA%20-%20Guidelines%20updated%20on%2009.02.2017%20%20.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.8073,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.7628,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.7527,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Wheat | State: Rajasthan RECENT HISTORY: (none) CONTEXT: [Source: National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management | Department of Agriculture, Cooperation & Farmers Welfare, Ministry of Agriculture & Farmers Welfare, Government of India] ng Science Colleges and providing them equipment. d) Directly through soil testing laboratories. …\n\n2. [Source: National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management | Department of Agriculture, Cooperation & Farmers Welfare, Ministry of Agriculture & Farmers Welfare, Government of India] labs for macro nutrients and micro nutrients analysis States can procure any soil testing equipment validated by ICAR or State Agricultural Universities …\n\n3. [Source: National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management | Department of Agriculture, Cooperation & Farmers Welfare, Ministry of Agriculture & Farmers Welfare, Government of India] 3.1 above) and providing them equipment (if necessary) to test the samples iv Directly through soil testing laboratories 2.3.3 Universities and Colleges in Soil …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-04",
+    "module": "farmsathi",
+    "category": "complex",
+    "language": "en",
+    "question": "What weed control and nutrient management practices are recommended for Direct Seeded Rice?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "icar_crri_direct_seeded_rice.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Integrated Pest Management Package for Rice",
+        "url": "https://www.ppqs.gov.in/sites/default/files/rice.pdf"
+      },
+      {
+        "title": "Package and Practices for Direct Seeded Rice - A Technology for Enhancing Climate Resilience and Farm Profitability",
+        "url": "https://icar-crri.in/wp-content/uploads/2025/12/CRRI_Technology-Bulletin_No-250.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7347,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.7347,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.7121,
+        "source_file": "icar_crri_direct_seeded_rice.pdf",
+        "title": "Package and Practices for Direct Seeded Rice - A Technology for Enhancing Climate Resilience and Farm Profitability"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Rice | State: Punjab RECENT HISTORY: (none) CONTEXT: [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] rassy weeds in direct seeded rice followed by one hand weeding given after 4-6 weeks. 2. Apply butachlor 50% EC @ 2.5-4 l/ha or pretilachlor 50% EC @ …\n\n2. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] n previous season, it requires prophylactic control measures in the current season. 10 INTEGRATED PEST MANAGEMENT PACKAGE FOR RICE 3.2. Cultural Practices a. Raise pre-crop kharif grow Sesbania or sunhemp and …\n\n3. [Source: Package and Practices for Direct Seeded Rice - A Technology for Enhancing Climate Resilience and Farm Profitability | ICAR - Central Rice Research Institute (CRRI)] maximize yield potential, an optimal seed rate of 20–25 kg per hectare for medium-fine-grain rice varieties, with a spacing of 20 cm between rows and 5 cm within rows, is recommended. Using an excessively high seed rate can …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-05",
+    "module": "farmsathi",
+    "category": "complex",
+    "language": "en",
+    "question": "What cultural and biological control measures are included in the PPQS Integrated Pest Management package for wheat?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "ppqs_ipm_wheat.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Integrated Pest Management Package for Rice",
+        "url": "https://www.ppqs.gov.in/sites/default/files/rice.pdf"
+      },
+      {
+        "title": "AESA Based IPM Package - Wheat",
+        "url": "https://www.ppqs.gov.in/sites/default/files/wheat.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6901,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.678,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.6698,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Wheat | State: Haryana RECENT HISTORY: (none) CONTEXT: [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] ny pest problem. It can be done through Agro-Ecosystem Analysis (AESA), field scouting, light, pheromone, sticky/yellow pan traps. The economic …\n\n2. [Source: AESA Based IPM Package - Wheat | Directorate of Plant Protection, Quarantine & Storage (PPQS), Ministry of Agriculture & Farmers Welfare, Government of India] tomary pest control techniques such as • Controlled climate, including cooling and aeration to reduce insect reproductive rate and humidity • Controlled and airtight storage atmospheres • Heat treatment (more than 60°C) to …\n\n3. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] kg soil and broadcast in 1ha). 3.5. Biological Control Practices The details of biological control practices are given below 3.5.1. Augmentation and Conservation y Trichogramma japonicum and T chilonis may be …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-06",
+    "module": "farmsathi",
+    "category": "bilingual",
+    "language": "en",
+    "question": "What are the main diseases of rice listed in the IPM package?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "ppqs_ipm_rice.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Integrated Pest Management Package for Rice",
+        "url": "https://www.ppqs.gov.in/sites/default/files/rice.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6141,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6051,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6018,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Crop: Rice | State: Odisha RECENT HISTORY: (none) CONTEXT: [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] . 38 different pesticides ................................................................................................. Plates Plate – 1: Symptoms …\n\n2. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] ing, flushed face, irritation of nose, throat, eyes and skin etc. No specific antidote, Treatment is essentially symptomatic. 24. Imidacloprid -do- -do- -do- 41 INTEGRATED PEST MANAGEMENT PACKAGE FOR RICE …\n\n3. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] and predators of rice insect pests ....................................................... 43 CONTENTS 1 INTEGRATED PEST MANAGEMENT PACKAGE FOR RICE 1. Introduction Integral India has the largest area under rice …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-07",
+    "module": "farmsathi",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "आईपीएम (IPM) पैकेज के अनुसार धान की फसल में लगने वाले प्रमुख रोग कौन-कौन से हैं?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "ppqs_ipm_rice.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Integrated Pest Management Package for Rice",
+        "url": "https://www.ppqs.gov.in/sites/default/files/rice.pdf"
+      },
+      {
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)",
+        "url": "https://iiwbr.org.in/wp-content/uploads/2023/08/EB-52-Wheat-Cultivation-in-India-Pocket-Guide.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6572,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6364,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6205,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nआपके प्रश्न के आधार पर उपलब्ध जानकारी:\n\n1. Crop: Rice | State: Odisha RECENT HISTORY: (none) CONTEXT: [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] and predators of rice insect pests ....................................................... 43 CONTENTS 1 INTEGRATED PEST MANAGEMENT PACKAGE FOR RICE 1. …\n\n2. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] s in India have indicated that controlling of insect pests alone increase yield by around 1 ton /ha. The diseases of rice accounts for about 10% loss in rice production annually or approximately 2.5 million …\n\n3. [Source: Integrated Pest Management Package for Rice | National Centre for Integrated Pest Management / Directorate of Plant Protection, Quarantine & Storage (PPQS), Government of India] sts : No. of natural enemies : Diseases types and severity : Weeds types and intensity : Rodent damage (if any) : Courtsey: NIPHM, Hyderabad 9 INTEGRATED PEST MANAGEMENT PACKAGE FOR RICE For the success of …\n\nअधिक सटीक सलाह के लिए अपने नज़दीकी KVK या कृषि विशेषज्ञ से संपर्क करें।"
+  },
+  {
+    "id": "fsh-08",
+    "module": "farmsathi",
+    "category": "missing_context",
+    "language": "en",
+    "question": "My plants are wilting and showing spots, what should I do?",
+    "expected_status": "needs_clarification",
+    "answerStatus": "needs_clarification",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.563,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.5403,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.5218,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "Please share more details about your crop and location so I can give you a better answer."
+  },
+  {
+    "id": "fsh-09",
+    "module": "farmsathi",
+    "category": "missing_context",
+    "language": "hi",
+    "question": "मेरे खेत में कीड़े लग गए हैं, मुझे कौन सा उपाय करना चाहिए?",
+    "expected_status": "needs_clarification",
+    "answerStatus": "needs_clarification",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6733,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.6512,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6321,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "आपकी फसल और स्थान के बारे में अधिक जानकारी दें तो मैं बेहतर उत्तर दे सकता हूँ।"
+  },
+  {
+    "id": "fsh-10",
+    "module": "farmsathi",
+    "category": "no_source",
+    "language": "en",
+    "question": "How is crop loss assessed for localized calamities under PMFBY insurance?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6531,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.5368,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.5181,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I'm sorry, I don't have verified information or live data for this request in my knowledge base."
+  },
+  {
+    "id": "fsh-11",
+    "module": "farmsathi",
+    "category": "no_source",
+    "language": "hi",
+    "question": "कल लखनऊ में मौसम का हाल और बारिश की संभावना क्या है?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.4658,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.4589,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      },
+      {
+        "score": 0.4542,
+        "source_file": "icar_crri_direct_seeded_rice.pdf",
+        "title": "Package and Practices for Direct Seeded Rice - A Technology for Enhancing Climate Resilience and Farm Profitability"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "माफ़ कीजिए, मेरे पास इस विषय (जैसे ताज़ा मंडी भाव, मौसम पूर्वानुमान, या यह योजना) पर सत्यापित जानकारी उपलब्ध नहीं है।"
+  },
+  {
+    "id": "fsh-12",
+    "module": "farmsathi",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "What are the eligibility rules for filing an RTI application against a government office?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "supported",
+    "status_pass": false,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Possible FAQs",
+        "url": "https://pmkisan.gov.in/Documents/FAQPMKISAN.PDF"
+      },
+      {
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines",
+        "url": "https://pmkisan.gov.in/Documents/OPERATIONAL%20GUIDELINES.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5143,
+        "source_file": "pmkisan_faq.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Possible FAQs"
+      },
+      {
+        "score": 0.4888,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      },
+      {
+        "score": 0.4858,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. State: Bihar RECENT HISTORY: (none) CONTEXT: [Source: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Possible FAQs | Ministry of Agriculture & Farmers Welfare, Government of India] eligible to get the benefit under the scheme? No. Serving or retired officer and employee of Central/ State Government Ministries /Offices/Departments and its field units Central or State PSEs and Attached offices …\n\n2. [Source: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines | Ministry of Agriculture & Farmers Welfare, Government of India] ary should be ensured. iii. For facilitating payment, Fund Transfer Order (FTO,) for the total amount in a batch of beneficiaries, is to be signed by State/UT, on the web portal of the scheme. iv. State/UT Governments are also required to identify a bank …\n\n3. [Source: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines | Ministry of Agriculture & Farmers Welfare, Government of India] also undertake publicity campaign (Information, Education and Communication-IEC). 6.2 Each State/UT Government will designate a Nodal Department for implementation of the scheme and coordinating with Central Government with regard to implementation of …\n\nFor precise advice, please consult your local Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-13",
+    "module": "farmsathi",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "भारत की राजधानी दिल्ली के प्रमुख पर्यटन स्थल कौन से हैं?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.3781,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.3549,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.3413,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "माफ़ कीजिए, मेरे पास इस प्रश्न का उत्तर देने के लिए पर्याप्त जानकारी नहीं है।"
+  },
+  {
+    "id": "fsh-14",
+    "module": "farmsathi",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "What is the recommended spray dose of AgroMax-707 pesticide for rice stem borer?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6749,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6642,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.6532,
+        "source_file": "icar_crri_direct_seeded_rice.pdf",
+        "title": "Package and Practices for Direct Seeded Rice - A Technology for Enhancing Climate Resilience and Farm Profitability"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I cannot verify or confirm that specific scheme, chemical, or dosage in the available official agricultural documents. Please consult your nearest Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "fsh-15",
+    "module": "farmsathi",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "केंद्र सरकार की 'किसान ड्रोन मुफ्त बैटरी योजना 2026' के तहत कितना अनुदान मिलता है?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.502,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.496,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.4693,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "माफ़ कीजिए, उपलब्ध आधिकारिक कृषि दस्तावेज़ों में इस योजना या रसायन की पुष्टि नहीं हो सकी। कृपया अपने नज़दीकी KVK या कृषि विशेषज्ञ से संपर्क करें।"
+  },
+  {
+    "id": "nsh-01",
+    "module": "nyayasathi",
+    "category": "basic",
+    "language": "en",
+    "question": "What rights does a consumer have under the Consumer Protection Act 2019?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "consumer_protection_act_2019.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)",
+        "url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7089,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.6856,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.6276,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Bihar | Category: consumer RECENT HISTORY: (none) CONTEXT: [Document: The Consumer Protection Act, 2019 (No. 35 of 2019) | Authority: Ministry of Law and Justice, Government of India | Jurisdiction: central | Act: Consumer Protection Act, 2019] Short title, extent, commencement and application. THE CONSUMER PROTECTION ACT, 2019 NO. 35 OF 2019 [9th August, 2019.] An Act to …\n\n2. [Document: The Consumer Protection Act, 2019 (No. 35 of 2019) | Authority: Ministry of Law and Justice, Government of India | Jurisdiction: central | Act: Consumer Protection Act, 2019] he protection of consumers under any other law for the time being in force and recommend appropriate remedial measures for their effective implementation; (e) recommend adoption of international covenants and …\n\n3. [Document: The Consumer Protection Act, 2019 (No. 35 of 2019) | Authority: Ministry of Law and Justice, Government of India | Jurisdiction: central | Act: Consumer Protection Act, 2019] shall be to render advice on promotion and protection of consumer rights under this Act within the State. 8. (1) The State Government shall, by notification, establish for every District with effect from such …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-02",
+    "module": "nyayasathi",
+    "category": "basic",
+    "language": "en",
+    "question": "What is the time limit for a Public Information Officer to reply to an RTI request under the RTI Act 2005?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "rti_act_2005_en.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)",
+        "url": "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf"
+      },
+      {
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs",
+        "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/menus/Citizen_Chartermenu.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6013,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.5963,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.5901,
+        "source_file": "consumeraffairs_citizen_charter_2025_26.pdf",
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Delhi | Category: other RECENT HISTORY: (none) CONTEXT: [Document: The Right to Information Act, 2005 (Act No. 22 of 2005) | Authority: Ministry of Law and Justice, Government of India | Jurisdiction: central | Act: Right to Information Act, 2005] e, and in any case within thirty days of the receipt of the request. either provide the information on payment of such fee as …\n\n2. [Document: The Right to Information Act, 2005 (Act No. 22 of 2005) | Authority: Ministry of Law and Justice, Government of India | Jurisdiction: central | Act: Right to Information Act, 2005] appeal is given to a Central Assistant Public Information Officer or a State Assistant Public Information Officer, as the case may be, a period of five days shall be added in computing the period for …\n\n3. [Document: Citizen's Charter 2025-26 - Department of Consumer Affairs | Authority: Department of Consumer Affairs, Ministry of Consumer Affairs, Food and Public Distribution, Government of India | Jurisdiction: central | Act: Department of Consumer Affairs Citizen's Charter 2025-26] gh the centralized RTI portal https://rtionline.gov.in. Hence, user need not come to the Department for filing RTI …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-03",
+    "module": "nyayasathi",
+    "category": "basic",
+    "language": "en",
+    "question": "Is an award passed by a Lok Adalat final and binding on the parties under NALSA regulations?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "nalsa_lok_adalat_regulations_2009.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "The National Legal Services Authorities (Lok Adalat) Regulations, 2009",
+        "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2025/04/202504081740620817.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7142,
+        "source_file": "nalsa_lok_adalat_regulations_2009.pdf",
+        "title": "The National Legal Services Authorities (Lok Adalat) Regulations, 2009"
+      },
+      {
+        "score": 0.6882,
+        "source_file": "nalsa_lok_adalat_regulations_2009.pdf",
+        "title": "The National Legal Services Authorities (Lok Adalat) Regulations, 2009"
+      },
+      {
+        "score": 0.6716,
+        "source_file": "nalsa_lok_adalat_regulations_2009.pdf",
+        "title": "The National Legal Services Authorities (Lok Adalat) Regulations, 2009"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Rajasthan | Category: legal_aid RECENT HISTORY: (none) CONTEXT: [Document: The National Legal Services Authorities (Lok Adalat) Regulations, 2009 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: Legal Services Authorities Act, 1987 (Lok Adalat Regulations, 2009)] shall give a reasonable hearing to the parties concerned. Provided that …\n\n2. [Document: The National Legal Services Authorities (Lok Adalat) Regulations, 2009 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: Legal Services Authorities Act, 1987 (Lok Adalat Regulations, 2009)] of Members: (1) (2) AWARD The dispute between the parties having been referred for determination to the Lok Adalat and the parties having compromised/settled the …\n\n3. [Document: The National Legal Services Authorities (Lok Adalat) Regulations, 2009 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: Legal Services Authorities Act, 1987 (Lok Adalat Regulations, 2009)] signatures only in settlement reached before them and should avoid affixing signatures to settlement reached by the parties outside the Lok Adalat with the …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-04",
+    "module": "nyayasathi",
+    "category": "complex",
+    "language": "en",
+    "question": "What is the role of the Legal Services Clinic or panel lawyer when someone applies under NALSA Free and Competent Legal Services Regulations 2010?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "nalsa_free_competent_legal_services_2010.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "NALSA Standard Operating Procedure for Redressal of Complaints / Public Grievances",
+        "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2025/04/202504081003291904.pdf"
+      },
+      {
+        "title": "The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010",
+        "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2025/04/20250408420654188.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7136,
+        "source_file": "nalsa_public_grievance_sop.pdf",
+        "title": "NALSA Standard Operating Procedure for Redressal of Complaints / Public Grievances"
+      },
+      {
+        "score": 0.6503,
+        "source_file": "nalsa_free_competent_legal_services_2010.pdf",
+        "title": "The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010"
+      },
+      {
+        "score": 0.6342,
+        "source_file": "nalsa_free_competent_legal_services_2010.pdf",
+        "title": "The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Uttar Pradesh | Category: legal_aid RECENT HISTORY: (none) CONTEXT: [Document: NALSA Standard Operating Procedure for Redressal of Complaints / Public Grievances | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA Standard Operating Procedure for Public Grievances] essing the complaints/ public grievances: At the level of NALSA i) …\n\n2. [Document: The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: Legal Services Authorities Act, 1987 (Free and Competent Legal Services Regulations, 2010)] of the Legal Services Institution decides to provide legal services through a panel lawyer, the choice of the panel …\n\n3. [Document: The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: Legal Services Authorities Act, 1987 (Free and Competent Legal Services Regulations, 2010)] Services Authority (Free and Competent Legal Services) Regulations, -2010 (see regulation-3) The Form of Application …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-05",
+    "module": "nyayasathi",
+    "category": "complex",
+    "language": "en",
+    "question": "What service standards and grievance redressal timelines are listed in the Department of Consumer Affairs Citizen's Charter?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "consumeraffairs_citizen_charter_2025_26.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs",
+        "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/menus/Citizen_Chartermenu.pdf"
+      },
+      {
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)",
+        "url": "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf"
+      },
+      {
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)",
+        "url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6452,
+        "source_file": "consumeraffairs_citizen_charter_2025_26.pdf",
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs"
+      },
+      {
+        "score": 0.6271,
+        "source_file": "consumeraffairs_citizen_charter_2025_26.pdf",
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs"
+      },
+      {
+        "score": 0.5993,
+        "source_file": "consumeraffairs_citizen_charter_2025_26.pdf",
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Maharashtra | Category: consumer RECENT HISTORY: (none) CONTEXT: [Document: Citizen's Charter 2025-26 - Department of Consumer Affairs | Authority: Department of Consumer Affairs, Ministry of Consumer Affairs, Food and Public Distribution, Government of India | Jurisdiction: central | Act: Department of Consumer Affairs Citizen's Charter 2025-26] tions on the complaint, …\n\n2. [Document: Citizen's Charter 2025-26 - Department of Consumer Affairs | Authority: Department of Consumer Affairs, Ministry of Consumer Affairs, Food and Public Distribution, Government of India | Jurisdiction: central | Act: Department of Consumer Affairs Citizen's Charter 2025-26] ts as per the guidelines issued by the Department. For complete list of documents please refer to …\n\n3. [Document: Citizen's Charter 2025-26 - Department of Consumer Affairs | Authority: Department of Consumer Affairs, Ministry of Consumer Affairs, Food and Public Distribution, Government of India | Jurisdiction: central | Act: Department of Consumer Affairs Citizen's Charter 2025-26] ess to affordable and effective grievance redressal mechanisms. Our Functions Department of Consumer Affairs is …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-06",
+    "module": "nyayasathi",
+    "category": "bilingual",
+    "language": "en",
+    "question": "What is the NALSA SOP for premature release, parole and furlough of prisoners?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "nalsa_parole_furlough_sop_2022.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022",
+        "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2025/04/202504081828372825.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.725,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.7043,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.692,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nBased on the available knowledge base:\n\n1. Country: India | State: Bihar | Category: legal_aid RECENT HISTORY: (none) CONTEXT: [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] ature release process involves assessment of …\n\n2. [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] lease. Further, in Criminal Appeal No. 1343/2012 directed the Secretary, NALSA to prepare a module regarding dissemination …\n\n3. [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] NALSA STANDARD OPERATING PROCEDURES ON THE PROCESS OF PREMATURE RELEASE, PAROLE AND FURLOUGH OF PRISONERS, 2022 NATIONAL LEGAL …\n\nFor specific legal representation, please consult a qualified advocate or contact NALSA / SLSA."
+  },
+  {
+    "id": "nsh-07",
+    "module": "nyayasathi",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "कैदियों की समयपूर्व रिहाई, पैरोल और फरलो के लिए NALSA की मानक संचालन प्रक्रिया (SOP) क्या है?",
+    "expected_status": "supported",
+    "answerStatus": "supported",
+    "status_pass": true,
+    "expected_source_files": [
+      "nalsa_parole_furlough_sop_2022.pdf"
+    ],
+    "sources_match": true,
+    "retrieved_sources": [
+      {
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022",
+        "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2025/04/202504081828372825.pdf"
+      }
+    ],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7403,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.7347,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.7347,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "[MOCK LLM – no real model loaded]\n\nआपके प्रश्न के आधार पर उपलब्ध जानकारी:\n\n1. Country: India | State: Bihar | Category: legal_aid RECENT HISTORY: (none) CONTEXT: [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] ature release process involves assessment of …\n\n2. [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] NALSA STANDARD OPERATING PROCEDURES ON THE PROCESS OF PREMATURE RELEASE, PAROLE AND FURLOUGH OF PRISONERS, 2022 NATIONAL LEGAL …\n\n3. [Document: NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022 | Authority: National Legal Services Authority (NALSA) | Jurisdiction: central | Act: NALSA SOP on Premature Release, Parole and Furlough, 2022] lease. Further, in Criminal Appeal No. 1343/2012 directed the Secretary, NALSA to prepare a module regarding dissemination …\n\nविस्तृत कानूनी सहायता के लिए किसी योग्य वकील या NALSA / राज्य विधिक सेवा प्राधिकरण से संपर्क करें।"
+  },
+  {
+    "id": "nsh-08",
+    "module": "nyayasathi",
+    "category": "state_specific",
+    "language": "en",
+    "question": "How can I apply for land mutation under my state land revenue rules?",
+    "expected_status": "needs_clarification",
+    "answerStatus": "needs_clarification",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.4192,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.3889,
+        "source_file": "nalsa_widows_access_to_justice.pdf",
+        "title": "NALSA Ensuring Access to Justice for Widows Living in Shelter Homes"
+      },
+      {
+        "score": 0.3822,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "To give you accurate legal information, could you please share which state in India you are located in?"
+  },
+  {
+    "id": "nsh-09",
+    "module": "nyayasathi",
+    "category": "state_specific",
+    "language": "hi",
+    "question": "मेरे राज्य के भूमि राजस्व और किराया कानून के तहत पंजीकरण कैसे होता है?",
+    "expected_status": "needs_clarification",
+    "answerStatus": "needs_clarification",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5235,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.5139,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.4949,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "सटीक कानूनी जानकारी देने के लिए कृपया बताएं कि आप भारत के किस राज्य में स्थित हैं?"
+  },
+  {
+    "id": "nsh-10",
+    "module": "nyayasathi",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the punishment for cheque bounce under Section 138 of the Negotiable Instruments Act?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5558,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.5537,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.5426,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I cannot verify or confirm Section 138 from the available official legal sources. Please verify this provision with a qualified advocate or your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "nsh-11",
+    "module": "nyayasathi",
+    "category": "no_source",
+    "language": "hi",
+    "question": "फैक्ट्री मजदूरों के लिए न्यूनतम मजदूरी और पीएफ (EPF) के नियम क्या हैं?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5135,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.4613,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.4551,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "माफ़ कीजिए, उपलब्ध सत्यापित कानूनी स्रोतों में इस प्रश्न का उत्तर देने के लिए पर्याप्त जानकारी नहीं है। कृपया किसी योग्य वकील या अपने नज़दीकी विधिक सेवा प्राधिकरण (NALSA / SLSA) से संपर्क करें।"
+  },
+  {
+    "id": "nsh-12",
+    "module": "nyayasathi",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "What are the recommended NPK fertilizer doses for wheat cultivation?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.2133,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.2108,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.1942,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I'm sorry, there is insufficient verified legal information in my knowledge base to answer this question. Please consult a qualified advocate or contact your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "nsh-13",
+    "module": "nyayasathi",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "धान की फसल में खरपतवार नियंत्रण कैसे किया जाता है?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.3363,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.3322,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.3149,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "माफ़ कीजिए, उपलब्ध सत्यापित कानूनी स्रोतों में इस प्रश्न का उत्तर देने के लिए पर्याप्त जानकारी नहीं है। कृपया किसी योग्य वकील या अपने नज़दीकी विधिक सेवा प्राधिकरण (NALSA / SLSA) से संपर्क करें।"
+  },
+  {
+    "id": "nsh-14",
+    "module": "nyayasathi",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "Under Section 650A of the Consumer Protection Act, how many days does a seller have to pay compensation?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6171,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.5898,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.58,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I cannot verify or confirm Section 650a from the available official legal sources. Please verify this provision with a qualified advocate or your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "nsh-15",
+    "module": "nyayasathi",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "सूचना का अधिकार अधिनियम की धारा 912C के तहत जुर्माने की राशि क्या है?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.761,
+        "source_file": "rti_act_2005_en.pdf",
+        "title": "The Right to Information Act, 2005 (Act No. 22 of 2005)"
+      },
+      {
+        "score": 0.6759,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.6495,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "उपलब्ध आधिकारिक कानूनी दस्तावेज़ों में धारा 912c की पुष्टि नहीं हो सकी। कृपया किसी योग्य वकील या विधिक सेवा प्राधिकरण (NALSA / SLSA) से सत्यापन कराएं।"
+  }
+]

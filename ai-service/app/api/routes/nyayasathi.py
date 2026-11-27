@@ -1,14 +1,12 @@
-"""POST /api/v1/nyayasathi/chat – NyayaSathi AI legal information endpoint.
-
-Phase C: delegates to the real jurisdiction-aware legal RAG pipeline in
-app.nyayasathi.service.
-"""
+"""POST /api/v1/nyayasathi/chat – NyayaSathi AI legal information endpoint."""
 from __future__ import annotations
 
 import logging
+import time
 
 from fastapi import APIRouter, Depends
 
+from app.core.exceptions import AIServiceError
 from app.core.security import require_api_key
 from app.nyayasathi.service import process_nyayasathi_chat
 from app.schemas.chat_schema import ChatResponse, NyayaSathiChatRequest
@@ -34,11 +32,24 @@ router = APIRouter(
 )
 async def nyayasathi_chat(request: NyayaSathiChatRequest) -> ChatResponse:
     """Full legal RAG pipeline: classify → jurisdiction-filter → retrieve → generate."""
+    t0 = time.perf_counter()
+    try:
+        resp = process_nyayasathi_chat(request)
+    except AIServiceError as exc:
+        latency_ms = int((time.perf_counter() - t0) * 1000)
+        logger.warning(
+            "requestId=%s endpoint=/api/v1/nyayasathi/chat errorCode=%s latency_ms=%d",
+            request.requestId,
+            exc.code,
+            latency_ms,
+        )
+        raise
+
+    latency_ms = int((time.perf_counter() - t0) * 1000)
     logger.info(
-        "NyayaSathi request [%s] lang=%s state=%s msg='%s…'",
+        "requestId=%s endpoint=/api/v1/nyayasathi/chat answerStatus=%s latency_ms=%d",
         request.requestId,
-        request.language,
-        request.context.state,
-        request.message[:50],
+        resp.answerStatus.value,
+        latency_ms,
     )
-    return process_nyayasathi_chat(request)
+    return resp

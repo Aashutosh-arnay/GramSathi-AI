@@ -1,7 +1,8 @@
 """Custom exception types and global FastAPI exception handlers."""
 from __future__ import annotations
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
 
@@ -73,6 +74,16 @@ class LLMConfigError(AIServiceError):
         )
 
 
+def _extract_request_id_from_exc(exc: RequestValidationError) -> str | None:
+    """Best-effort extraction of requestId from a failed validation body."""
+    body = getattr(exc, "body", None)
+    if isinstance(body, dict):
+        rid = body.get("requestId")
+        if isinstance(rid, str) and rid.strip():
+            return rid
+    return None
+
+
 def register_exception_handlers(app: FastAPI) -> None:
     """Attach global exception handlers to a FastAPI application."""
 
@@ -88,6 +99,45 @@ def register_exception_handlers(app: FastAPI) -> None:
                     "code": exc.code,
                     "message": exc.message,
                     "retryable": exc.retryable,
+                },
+            },
+        )
+
+    @app.exception_handler(RequestValidationError)
+    async def validation_error_handler(
+        request: Request, exc: RequestValidationError
+    ) -> JSONResponse:
+        errors = exc.errors()
+        first = errors[0] if errors else {}
+        loc = ".".join(str(p) for p in first.get("loc", []) if p != "body")
+        msg = first.get("msg", "Invalid request payload.")
+        message = f"{loc}: {msg}" if loc else msg
+        return JSONResponse(
+            status_code=422,
+            content={
+                "requestId": _extract_request_id_from_exc(exc),
+                "error": {
+                    "code": "VALIDATION_ERROR",
+                    "message": message,
+                    "retryable": False,
+                },
+            },
+        )
+
+    @app.exception_handler(HTTPException)
+    async def http_exception_handler(
+        request: Request, exc: HTTPException
+    ) -> JSONResponse:
+        if isinstance(exc.detail, dict) and "error" in exc.detail:
+            return JSONResponse(status_code=exc.status_code, content=exc.detail)
+        return JSONResponse(
+            status_code=exc.status_code,
+            content={
+                "requestId": None,
+                "error": {
+                    "code": "HTTP_ERROR",
+                    "message": str(exc.detail),
+                    "retryable": False,
                 },
             },
         )

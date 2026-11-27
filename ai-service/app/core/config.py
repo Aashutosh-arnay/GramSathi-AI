@@ -41,7 +41,7 @@ class Settings(BaseSettings):
     # Retrieval settings
     retrieval_top_k: int = 5
     # Cosine similarity threshold [0.0–1.0]; chunks below this score are dropped
-    retrieval_threshold: float = 0.30
+    retrieval_threshold: float = 0.45
 
     # Data paths
     farmsathi_data_path: str = "../dataset/farmsathi"

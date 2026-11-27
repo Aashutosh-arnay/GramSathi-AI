@@ -1,0 +1,418 @@
+[
+  {
+    "id": "gr-01",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "en",
+    "question": "What is the mandi price of wheat?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.7008,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      },
+      {
+        "score": 0.6108,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.597,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I'm sorry, I don't have verified information or live data for this request in my knowledge base."
+  },
+  {
+    "id": "gr-02",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "en",
+    "question": "What is the wheat rate in Patna?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6919,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      },
+      {
+        "score": 0.6516,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.6316,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I'm sorry, I don't have verified information or live data for this request in my knowledge base."
+  },
+  {
+    "id": "gr-03",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "hi",
+    "question": "गेहूं का भाव क्या चल रहा है?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6689,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.606,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.5984,
+        "source_file": "icar_iiwbr_wheat_pocket_guide.pdf",
+        "title": "Wheat Cultivation in India: Pocket Guide (Extension Bulletin No. 52)"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "माफ़ कीजिए, मेरे पास इस विषय (जैसे ताज़ा मंडी भाव, मौसम पूर्वानुमान, या यह योजना) पर सत्यापित जानकारी उपलब्ध नहीं है।"
+  },
+  {
+    "id": "gr-04",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "en",
+    "question": "What is the weather forecast for Patna?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.4288,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.3749,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.3374,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I'm sorry, I don't have verified information or live data for this request in my knowledge base."
+  },
+  {
+    "id": "gr-05",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "en",
+    "question": "What is the rainfall prediction in Nashik?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.4437,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.4131,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      },
+      {
+        "score": 0.3916,
+        "source_file": "nmsa_soil_health_management_guidelines.pdf",
+        "title": "National Mission for Sustainable Agriculture (NMSA) - Operational Guidelines for Soil Health Management"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I'm sorry, I don't have verified information or live data for this request in my knowledge base."
+  },
+  {
+    "id": "gr-06",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "hi",
+    "question": "पटना में मौसम का हाल कैसा रहेगा?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5203,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.4915,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      },
+      {
+        "score": 0.4173,
+        "source_file": "ppqs_ipm_wheat.pdf",
+        "title": "AESA Based IPM Package - Wheat"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "माफ़ कीजिए, मेरे पास इस विषय (जैसे ताज़ा मंडी भाव, मौसम पूर्वानुमान, या यह योजना) पर सत्यापित जानकारी उपलब्ध नहीं है।"
+  },
+  {
+    "id": "gr-07",
+    "module": "farmsathi",
+    "category": "fake_scheme",
+    "language": "en",
+    "question": "How do I apply for the PM-Kisan Free Tractor Yojana 2026?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5146,
+        "source_file": "pmkisan_amendment_og.pdf",
+        "title": "Amendment to Para 8.1 of Operational Guidelines of PM-KISAN Scheme"
+      },
+      {
+        "score": 0.5007,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      },
+      {
+        "score": 0.5001,
+        "source_file": "pmkisan_operational_guidelines.pdf",
+        "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) Operational Guidelines"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I cannot verify or confirm that specific scheme, chemical, or dosage in the available official agricultural documents. Please consult your nearest Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "gr-08",
+    "module": "farmsathi",
+    "category": "fake_chemical",
+    "language": "en",
+    "question": "What dosage of BioBlast-404 should I spray on rice?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6161,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.5708,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      },
+      {
+        "score": 0.5673,
+        "source_file": "ppqs_ipm_rice.pdf",
+        "title": "Integrated Pest Management Package for Rice"
+      }
+    ],
+    "disclaimer_present": null,
+    "answer": "I cannot verify or confirm that specific scheme, chemical, or dosage in the available official agricultural documents. Please consult your nearest Krishi Vigyan Kendra (KVK) or an agricultural expert."
+  },
+  {
+    "id": "gr-09",
+    "module": "nyayasathi",
+    "category": "anchor_plus_uncovered",
+    "language": "en",
+    "question": "What is the divorce procedure under NALSA?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5182,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.5115,
+        "source_file": "nalsa_widows_access_to_justice.pdf",
+        "title": "NALSA Ensuring Access to Justice for Widows Living in Shelter Homes"
+      },
+      {
+        "score": 0.4988,
+        "source_file": "nalsa_widows_access_to_justice.pdf",
+        "title": "NALSA Ensuring Access to Justice for Widows Living in Shelter Homes"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I'm sorry, there is insufficient verified legal information in my knowledge base to answer this question. Please consult a qualified advocate or contact your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "gr-10",
+    "module": "nyayasathi",
+    "category": "anchor_plus_uncovered",
+    "language": "en",
+    "question": "What is the bail process under RTI?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.5845,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.5496,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      },
+      {
+        "score": 0.5394,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I'm sorry, there is insufficient verified legal information in my knowledge base to answer this question. Please consult a qualified advocate or contact your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "gr-11",
+    "module": "nyayasathi",
+    "category": "fake_section",
+    "language": "en",
+    "question": "What penalty applies under Section 888Z of the Consumer Protection Act?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.6532,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.6029,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.5947,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I cannot verify or confirm Section 888z from the available official legal sources. Please verify this provision with a qualified advocate or your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "gr-12",
+    "module": "nyayasathi",
+    "category": "fake_section",
+    "language": "en",
+    "question": "What does Section 404B of the RTI Act state?",
+    "expected_status": "insufficient_information",
+    "answerStatus": "insufficient_information",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.3927,
+        "source_file": "nalsa_free_competent_legal_services_2010.pdf",
+        "title": "The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010"
+      },
+      {
+        "score": 0.3868,
+        "source_file": "consumeraffairs_citizen_charter_2025_26.pdf",
+        "title": "Citizen's Charter 2025-26 - Department of Consumer Affairs"
+      },
+      {
+        "score": 0.3836,
+        "source_file": "nalsa_free_competent_legal_services_2010.pdf",
+        "title": "The National Legal Services Authority (Free and Competent Legal Services) Regulations, 2010"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "I cannot verify or confirm Section 404b from the available official legal sources. Please verify this provision with a qualified advocate or your nearest Legal Services Authority (NALSA / SLSA)."
+  },
+  {
+    "id": "gr-13",
+    "module": "nyayasathi",
+    "category": "unrecognized_state",
+    "language": "en",
+    "question": "What are the tenant eviction rules under state rent control law?",
+    "expected_status": "needs_clarification",
+    "answerStatus": "needs_clarification",
+    "status_pass": true,
+    "expected_source_files": [],
+    "sources_match": true,
+    "retrieved_sources": [],
+    "top_retrieval_scores": [
+      {
+        "score": 0.4981,
+        "source_file": "nalsa_widows_access_to_justice.pdf",
+        "title": "NALSA Ensuring Access to Justice for Widows Living in Shelter Homes"
+      },
+      {
+        "score": 0.4617,
+        "source_file": "consumer_protection_act_2019.pdf",
+        "title": "The Consumer Protection Act, 2019 (No. 35 of 2019)"
+      },
+      {
+        "score": 0.4569,
+        "source_file": "nalsa_parole_furlough_sop_2022.pdf",
+        "title": "NALSA Standard Operating Procedures on the Process of Premature Release, Parole and Furlough of Prisoners, 2022"
+      }
+    ],
+    "disclaimer_present": true,
+    "answer": "To give you accurate legal information, could you please share which state in India you are located in?"
+  }
+]

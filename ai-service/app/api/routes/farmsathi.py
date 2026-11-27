@@ -1,13 +1,12 @@
-"""POST /api/v1/farmsathi/chat – FarmSathi AI agricultural chat endpoint.
-
-Phase B: delegates to the real RAG pipeline in app.farmsathi.service.
-"""
+"""POST /api/v1/farmsathi/chat – FarmSathi AI agricultural chat endpoint."""
 from __future__ import annotations
 
 import logging
+import time
 
 from fastapi import APIRouter, Depends
 
+from app.core.exceptions import AIServiceError
 from app.core.security import require_api_key
 from app.farmsathi.service import process_farmsathi_chat
 from app.schemas.chat_schema import ChatResponse, FarmSathiChatRequest
@@ -33,10 +32,24 @@ router = APIRouter(
 )
 async def farmsathi_chat(request: FarmSathiChatRequest) -> ChatResponse:
     """Full RAG pipeline: embed → retrieve → (optionally) generate → respond."""
+    t0 = time.perf_counter()
+    try:
+        resp = process_farmsathi_chat(request)
+    except AIServiceError as exc:
+        latency_ms = int((time.perf_counter() - t0) * 1000)
+        logger.warning(
+            "requestId=%s endpoint=/api/v1/farmsathi/chat errorCode=%s latency_ms=%d",
+            request.requestId,
+            exc.code,
+            latency_ms,
+        )
+        raise
+
+    latency_ms = int((time.perf_counter() - t0) * 1000)
     logger.info(
-        "FarmSathi request [%s] lang=%s msg='%s…'",
+        "requestId=%s endpoint=/api/v1/farmsathi/chat answerStatus=%s latency_ms=%d",
         request.requestId,
-        request.language,
-        request.message[:50],
+        resp.answerStatus.value,
+        latency_ms,
     )
-    return process_farmsathi_chat(request)
+    return resp

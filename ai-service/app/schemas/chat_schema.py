@@ -7,9 +7,9 @@ from __future__ import annotations
 
 from datetime import date
 from enum import Enum
-from typing import Any
+from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 # ---------------------------------------------------------------------------
@@ -72,27 +72,44 @@ class ErrorDetail(BaseModel):
 # ---------------------------------------------------------------------------
 
 
-class FarmSathiChatRequest(BaseModel):
-    requestId: str = Field(..., description="Unique identifier for this request.")
-    conversationId: str = Field(..., description="MongoDB conversation document ID.")
-    message: str = Field(..., min_length=1, description="The user's question.")
-    language: str = Field("en", description="ISO 639-1 language code (e.g. 'en', 'hi').")
+class _BaseChatRequest(BaseModel):
+    requestId: str = Field(..., min_length=1, description="Unique identifier for this request.")
+    conversationId: str = Field(..., min_length=1, description="MongoDB conversation document ID.")
+    message: str = Field(
+        ...,
+        min_length=1,
+        max_length=2000,
+        description="The user's question (max 2000 characters).",
+    )
+    language: Literal["hi", "en"] = Field(
+        "en",
+        description="Supported ISO 639-1 language code ('hi' or 'en').",
+    )
     history: list[HistoryMessage] = Field(
         default_factory=list,
-        description="Recent conversation turns (not the full history).",
+        description="Recent conversation turns (truncated to the last 6 messages).",
     )
+    attachments: list[Any] = Field(default_factory=list)
+
+    @field_validator("history")
+    @classmethod
+    def _truncate_history(cls, v: list[HistoryMessage]) -> list[HistoryMessage]:
+        return v[-6:] if len(v) > 6 else v
+
+    @field_validator("attachments")
+    @classmethod
+    def _reject_attachments(cls, v: list[Any]) -> list[Any]:
+        if v:
+            raise ValueError("Attachments are not supported yet.")
+        return v
+
+
+class FarmSathiChatRequest(_BaseChatRequest):
     context: FarmSathiContext = Field(default_factory=FarmSathiContext)
-    attachments: list[Any] = Field(default_factory=list)
 
 
-class NyayaSathiChatRequest(BaseModel):
-    requestId: str = Field(..., description="Unique identifier for this request.")
-    conversationId: str = Field(..., description="MongoDB conversation document ID.")
-    message: str = Field(..., min_length=1, description="The user's legal question.")
-    language: str = Field("en", description="ISO 639-1 language code.")
-    history: list[HistoryMessage] = Field(default_factory=list)
+class NyayaSathiChatRequest(_BaseChatRequest):
     context: NyayaSathiContext = Field(default_factory=NyayaSathiContext)
-    attachments: list[Any] = Field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------

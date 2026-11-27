@@ -9,6 +9,7 @@ from datetime import date
 
 from app.core.config import get_settings
 from app.core.exceptions import AIServiceError, LLMUnavailableError, RetrievalUnavailableError
+from app.core.states import normalize_state
 from app.farmsathi.prompts import summarise_history
 from app.nyayasathi.knowledge_base import get_nyayasathi_collection
 from app.nyayasathi.prompts import (
@@ -226,7 +227,8 @@ def process_nyayasathi_chat(request: NyayaSathiChatRequest) -> ChatResponse:
     """Full NyayaSathi pipeline: classify → jurisdiction-filtered retrieve → guard → LLM."""
     settings = get_settings()
     language = request.language or "en"
-    state = request.context.state
+    # Normalize state; unrecognized non-empty state becomes None (treated as missing)
+    state = normalize_state(request.context.state)
     category = classify_legal_category(request.message, request.context.category)
     logger.info(
         "NyayaSathi [%s] category=%s state=%s lang=%s",
@@ -282,6 +284,38 @@ def process_nyayasathi_chat(request: NyayaSathiChatRequest) -> ChatResponse:
     # ── 4. Below threshold → insufficient_information (do NOT call LLM) ─────
     if not chunks:
         return _insufficient_response(request.requestId, language)
+
+    # ── 4b. Domain-relevance guard for uncovered legal topics ───────────────
+    # Trigger when the query asks for the procedure/rules/punishment of an
+    # uncovered topic (even if paired with a covered anchor like NALSA/RTI),
+    # OR when no covered anchor is present.
+    _COVERED_ANCHORS = ("nalsa", "lok adalat", "free legal", "legal aid", "rti", "right to information", "consumer")
+    _TOPIC_TERMS = (
+        "bail", "fir", "divorce", "hindu marriage", "minimum wage", "epf",
+        "mutation", "dakhil-kharij", "एफआईआर", "जमानत", "तलाक",
+    )
+    _TOPIC_INTENT_RE = re.compile(
+        r"\b(?:" + "|".join(re.escape(t) for t in _TOPIC_TERMS) + r")\s+"
+        r"(?:procedure|process|rules?|law|filing|punishment|steps)\b",
+        re.IGNORECASE,
+    )
+    msg_lower = request.message.lower()
+    has_covered_anchor = any(a in msg_lower for a in _COVERED_ANCHORS)
+    explicit_topic_intent = bool(_TOPIC_INTENT_RE.search(msg_lower))
+
+    if explicit_topic_intent or not has_covered_anchor:
+        asked_topics = [
+            t for t in _TOPIC_TERMS
+            if re.search(r"(?<!\w)" + re.escape(t) + r"(?!\w)", msg_lower)
+        ]
+        if asked_topics:
+            chunks_text = " ".join(c.text.lower() for c in chunks)
+            if not any(
+                re.search(r"(?<!\w)" + re.escape(t) + r"(?!\w)", chunks_text)
+                for t in asked_topics
+            ):
+                logger.info("[%s] Topic %s not found in retrieved chunks → insufficient_information.", request.requestId, asked_topics)
+                return _insufficient_response(request.requestId, language)
 
     # ── 5. Hallucination trap: verify any asked section numbers exist ───────
     asked_sections = _extract_asked_sections(request.message)

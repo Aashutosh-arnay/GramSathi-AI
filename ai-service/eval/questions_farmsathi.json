@@ -1,0 +1,227 @@
+[
+  {
+    "id": "fs-01",
+    "category": "basic",
+    "language": "en",
+    "question": "Who is eligible for PM-KISAN income support and how much money is given per year?",
+    "context": {"state": "Bihar", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["pmkisan_operational_guidelines.pdf", "pmkisan_faq.pdf"]
+  },
+  {
+    "id": "fs-02",
+    "category": "basic",
+    "language": "en",
+    "question": "What is the recommended sowing time for wheat in the North Western Plains Zone of India?",
+    "context": {"state": "Punjab", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_iiwbr_wheat_pocket_guide.pdf"]
+  },
+  {
+    "id": "fs-03",
+    "category": "basic",
+    "language": "en",
+    "question": "What are the key objectives of Soil Health Management under NMSA?",
+    "context": {"state": "Madhya Pradesh", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["nmsa_soil_health_management_guidelines.pdf"]
+  },
+  {
+    "id": "fs-04",
+    "category": "basic",
+    "language": "en",
+    "question": "What are the major insect pests of rice and how does Integrated Pest Management control them?",
+    "context": {"state": "Odisha", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["ppqs_ipm_rice.pdf"]
+  },
+  {
+    "id": "fs-05",
+    "category": "basic",
+    "language": "en",
+    "question": "What is Direct Seeded Rice and how does it save water and labour?",
+    "context": {"state": "Haryana", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_crri_direct_seeded_rice.pdf"]
+  },
+  {
+    "id": "fs-06",
+    "category": "complex",
+    "language": "en",
+    "question": "Are urban cultivable lands eligible under PM-KISAN, and how is the benefit calculated from December 2018?",
+    "context": {"state": "Uttar Pradesh", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["pmkisan_additional_faq.pdf", "pmkisan_amendment_og.pdf"]
+  },
+  {
+    "id": "fs-07",
+    "category": "complex",
+    "language": "en",
+    "question": "How should wheat irrigation and weed management be scheduled, and what IPM practices help control wheat pests?",
+    "context": {"state": "Haryana", "crop": "Wheat", "cropStage": "Vegetative"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_iiwbr_wheat_pocket_guide.pdf", "ppqs_ipm_wheat.pdf"]
+  },
+  {
+    "id": "fs-08",
+    "category": "complex",
+    "language": "en",
+    "question": "How does Soil Health Management promote Integrated Nutrient Management and soil fertility mapping under NMSA?",
+    "context": {"state": "Maharashtra", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["nmsa_soil_health_management_guidelines.pdf"]
+  },
+  {
+    "id": "fs-09",
+    "category": "bilingual",
+    "language": "en",
+    "question": "What are the benefits of Direct Seeded Rice for farmers?",
+    "context": {"state": "Bihar", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_crri_direct_seeded_rice.pdf"]
+  },
+  {
+    "id": "fs-10",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "किसानों के लिए धान की सीधी बुआई (Direct Seeded Rice) के क्या फायदे हैं?",
+    "context": {"state": "Bihar", "crop": "Rice"},
+    "expected_status": "supported",
+    "expected_source_files": ["icar_crri_direct_seeded_rice.pdf"]
+  },
+  {
+    "id": "fs-11",
+    "category": "bilingual",
+    "language": "en",
+    "question": "Who is excluded from receiving benefits under the PM-KISAN scheme?",
+    "context": {"state": "Rajasthan", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["pmkisan_operational_guidelines.pdf", "pmkisan_faq.pdf"]
+  },
+  {
+    "id": "fs-12",
+    "category": "bilingual",
+    "language": "hi",
+    "question": "पीएम-किसान योजना का लाभ किसे नहीं मिलता है (अपवाद क्या हैं)?",
+    "context": {"state": "Rajasthan", "crop": "Wheat"},
+    "expected_status": "supported",
+    "expected_source_files": ["pmkisan_operational_guidelines.pdf", "pmkisan_faq.pdf"]
+  },
+  {
+    "id": "fs-13",
+    "category": "missing_context",
+    "language": "en",
+    "question": "My crop leaves are turning yellow, what should I do?",
+    "context": {},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-14",
+    "category": "missing_context",
+    "language": "hi",
+    "question": "मेरी फसल अच्छी नहीं बढ़ रही है, मुझे क्या करना चाहिए?",
+    "context": {},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-15",
+    "category": "missing_context",
+    "language": "en",
+    "question": "When should I irrigate my field and which fertilizer should I apply?",
+    "context": {},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-16",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the premium rate and claim deadline under Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "context": {"state": "Bihar", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-17",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the current price of a 45 HP Mahindra tractor in Patna?",
+    "context": {"state": "Bihar", "district": "Patna"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-18",
+    "category": "no_source",
+    "language": "hi",
+    "question": "आज पटना मंडी में गेहूँ और टमाटर का ताज़ा भाव क्या है?",
+    "context": {"state": "Bihar", "district": "Patna", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-19",
+    "category": "no_source",
+    "language": "en",
+    "question": "What is the weather forecast and rainfall prediction for Nashik tomorrow?",
+    "context": {"state": "Maharashtra", "district": "Nashik"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-20",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "How can I file a consumer complaint in the District Consumer Commission?",
+    "context": {"state": "Bihar"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-21",
+    "category": "out_of_scope",
+    "language": "en",
+    "question": "Who won the last cricket world cup final match?",
+    "context": {},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-22",
+    "category": "out_of_scope",
+    "language": "hi",
+    "question": "क्या आप मुझे पनीर बटर मसाला बनाने की रेसिपी बता सकते हैं?",
+    "context": {},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-23",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "How do I apply for the PM-Kisan Free Solar Tractor Subsidy Scheme 2026 giving Rs 5 lakh?",
+    "context": {"state": "Bihar", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-24",
+    "category": "hallucination_trap",
+    "language": "en",
+    "question": "What is the exact ICAR dosage of SuperKill-999 chemical for wheat rust?",
+    "context": {"state": "Punjab", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "fs-25",
+    "category": "hallucination_trap",
+    "language": "hi",
+    "question": "भारत सरकार की 'हरित क्रांति मुफ्त बीज और डीजल योजना 2026' के नियम क्या हैं?",
+    "context": {"state": "Uttar Pradesh", "crop": "Rice"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  }
+]

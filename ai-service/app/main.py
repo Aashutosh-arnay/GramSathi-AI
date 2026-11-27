@@ -7,7 +7,7 @@ import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import farmsathi, health, nyayasathi
+from app.api.routes import farmsathi, health, meta, nyayasathi
 from app.core.config import get_settings
 from app.core.exceptions import register_exception_handlers
 
@@ -60,6 +60,7 @@ register_exception_handlers(app)
 # Routers
 # ---------------------------------------------------------------------------
 app.include_router(health.router)
+app.include_router(meta.router)
 app.include_router(farmsathi.router)
 app.include_router(nyayasathi.router)
 

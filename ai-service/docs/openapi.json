@@ -1,0 +1,665 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GramSathi AI Service",
+    "description": "Internal AI service powering FarmSathi (agricultural assistant) and NyayaSathi (legal information assistant) for the GramSathi AI platform.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "AI service health check",
+        "description": "Returns 200 OK when the AI service is running.",
+        "operationId": "health_check_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/meta/states": {
+      "get": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "List canonical Indian states and union territories",
+        "description": "Returns the canonical list of 28 states and 8 union territories.",
+        "operationId": "list_states_api_v1_meta_states_get",
+        "parameters": [
+          {
+            "name": "AI-Service-Api-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Shared internal API key (AI_SERVICE_API_KEY env var).",
+              "title": "Ai-Service-Api-Key"
+            },
+            "description": "Shared internal API key (AI_SERVICE_API_KEY env var)."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatesResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/farmsathi/chat": {
+      "post": {
+        "tags": [
+          "FarmSathi AI"
+        ],
+        "summary": "FarmSathi agricultural question answering",
+        "description": "Send an agricultural question in Hindi or English. Returns an AI-generated answer grounded in the FarmSathi knowledge base, with source citations from verified agricultural documents.",
+        "operationId": "farmsathi_chat_api_v1_farmsathi_chat_post",
+        "parameters": [
+          {
+            "name": "AI-Service-Api-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Shared internal API key (AI_SERVICE_API_KEY env var).",
+              "title": "Ai-Service-Api-Key"
+            },
+            "description": "Shared internal API key (AI_SERVICE_API_KEY env var)."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FarmSathiChatRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/nyayasathi/chat": {
+      "post": {
+        "tags": [
+          "NyayaSathi AI"
+        ],
+        "summary": "NyayaSathi legal information question answering",
+        "description": "Send a legal question in Hindi or English. Returns general legal information with verified source citations and a mandatory legal disclaimer.",
+        "operationId": "nyayasathi_chat_api_v1_nyayasathi_chat_post",
+        "parameters": [
+          {
+            "name": "AI-Service-Api-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Shared internal API key (AI_SERVICE_API_KEY env var).",
+              "title": "Ai-Service-Api-Key"
+            },
+            "description": "Shared internal API key (AI_SERVICE_API_KEY env var)."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NyayaSathiChatRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnswerStatus": {
+        "type": "string",
+        "enum": [
+          "supported",
+          "needs_clarification",
+          "insufficient_information"
+        ],
+        "title": "AnswerStatus",
+        "description": "Possible values for the answerStatus field (Section 6.2)."
+      },
+      "ChatResponse": {
+        "properties": {
+          "requestId": {
+            "type": "string",
+            "title": "Requestid"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language"
+          },
+          "answerStatus": {
+            "$ref": "#/components/schemas/AnswerStatus"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "followUpQuestions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Followupquestions"
+          },
+          "disclaimer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Disclaimer"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/ResponseMetadata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "requestId",
+          "answer",
+          "language",
+          "answerStatus",
+          "metadata"
+        ],
+        "title": "ChatResponse"
+      },
+      "FarmSathiChatRequest": {
+        "properties": {
+          "requestId": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Requestid",
+            "description": "Unique identifier for this request."
+          },
+          "conversationId": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Conversationid",
+            "description": "MongoDB conversation document ID."
+          },
+          "message": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Message",
+            "description": "The user's question (max 2000 characters)."
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "hi",
+              "en"
+            ],
+            "title": "Language",
+            "description": "Supported ISO 639-1 language code ('hi' or 'en').",
+            "default": "en"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/HistoryMessage"
+            },
+            "type": "array",
+            "title": "History",
+            "description": "Recent conversation turns (truncated to the last 6 messages)."
+          },
+          "attachments": {
+            "items": {},
+            "type": "array",
+            "title": "Attachments"
+          },
+          "context": {
+            "$ref": "#/components/schemas/FarmSathiContext"
+          }
+        },
+        "type": "object",
+        "required": [
+          "requestId",
+          "conversationId",
+          "message"
+        ],
+        "title": "FarmSathiChatRequest"
+      },
+      "FarmSathiContext": {
+        "properties": {
+          "state": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          },
+          "district": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "District"
+          },
+          "crop": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Crop"
+          },
+          "cropStage": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cropstage"
+          }
+        },
+        "type": "object",
+        "title": "FarmSathiContext"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "service": {
+            "type": "string",
+            "title": "Service"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "service",
+          "timestamp",
+          "version"
+        ],
+        "title": "HealthResponse"
+      },
+      "HistoryMessage": {
+        "properties": {
+          "role": {
+            "$ref": "#/components/schemas/MessageRole"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          }
+        },
+        "type": "object",
+        "required": [
+          "role",
+          "content"
+        ],
+        "title": "HistoryMessage"
+      },
+      "MessageRole": {
+        "type": "string",
+        "enum": [
+          "user",
+          "assistant"
+        ],
+        "title": "MessageRole"
+      },
+      "NyayaSathiChatRequest": {
+        "properties": {
+          "requestId": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Requestid",
+            "description": "Unique identifier for this request."
+          },
+          "conversationId": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Conversationid",
+            "description": "MongoDB conversation document ID."
+          },
+          "message": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Message",
+            "description": "The user's question (max 2000 characters)."
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "hi",
+              "en"
+            ],
+            "title": "Language",
+            "description": "Supported ISO 639-1 language code ('hi' or 'en').",
+            "default": "en"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/HistoryMessage"
+            },
+            "type": "array",
+            "title": "History",
+            "description": "Recent conversation turns (truncated to the last 6 messages)."
+          },
+          "attachments": {
+            "items": {},
+            "type": "array",
+            "title": "Attachments"
+          },
+          "context": {
+            "$ref": "#/components/schemas/NyayaSathiContext"
+          }
+        },
+        "type": "object",
+        "required": [
+          "requestId",
+          "conversationId",
+          "message"
+        ],
+        "title": "NyayaSathiChatRequest"
+      },
+      "NyayaSathiContext": {
+        "properties": {
+          "country": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Country",
+            "default": "India"
+          },
+          "state": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          },
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category"
+          }
+        },
+        "type": "object",
+        "title": "NyayaSathiContext"
+      },
+      "ResponseMetadata": {
+        "properties": {
+          "service": {
+            "type": "string",
+            "title": "Service"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version",
+            "default": "1.0"
+          }
+        },
+        "type": "object",
+        "required": [
+          "service"
+        ],
+        "title": "ResponseMetadata"
+      },
+      "Source": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "publisher": {
+            "type": "string",
+            "title": "Publisher"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "publishedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Publishedat"
+          },
+          "retrievedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retrievedat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "publisher",
+          "url"
+        ],
+        "title": "Source"
+      },
+      "StatesResponse": {
+        "properties": {
+          "states": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "States"
+          },
+          "count": {
+            "type": "integer",
+            "title": "Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "states",
+          "count"
+        ],
+        "title": "StatesResponse"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

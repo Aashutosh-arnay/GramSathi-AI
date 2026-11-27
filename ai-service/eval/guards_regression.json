@@ -1,0 +1,132 @@
+[
+  {
+    "id": "gr-01",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "en",
+    "question": "What is the mandi price of wheat?",
+    "context": {"state": "Bihar", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-02",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "en",
+    "question": "What is the wheat rate in Patna?",
+    "context": {"state": "Bihar", "district": "Patna", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-03",
+    "module": "farmsathi",
+    "category": "live_data_no_time",
+    "language": "hi",
+    "question": "गेहूं का भाव क्या चल रहा है?",
+    "context": {"state": "Bihar", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-04",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "en",
+    "question": "What is the weather forecast for Patna?",
+    "context": {"state": "Bihar", "district": "Patna"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-05",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "en",
+    "question": "What is the rainfall prediction in Nashik?",
+    "context": {"state": "Maharashtra", "district": "Nashik"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-06",
+    "module": "farmsathi",
+    "category": "weather_no_time",
+    "language": "hi",
+    "question": "पटना में मौसम का हाल कैसा रहेगा?",
+    "context": {"state": "Bihar", "district": "Patna"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-07",
+    "module": "farmsathi",
+    "category": "fake_scheme",
+    "language": "en",
+    "question": "How do I apply for the PM-Kisan Free Tractor Yojana 2026?",
+    "context": {"state": "Uttar Pradesh", "crop": "Wheat"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-08",
+    "module": "farmsathi",
+    "category": "fake_chemical",
+    "language": "en",
+    "question": "What dosage of BioBlast-404 should I spray on rice?",
+    "context": {"state": "Odisha", "crop": "Rice"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-09",
+    "module": "nyayasathi",
+    "category": "anchor_plus_uncovered",
+    "language": "en",
+    "question": "What is the divorce procedure under NALSA?",
+    "context": {"country": "India", "state": "Bihar", "category": "Family"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-10",
+    "module": "nyayasathi",
+    "category": "anchor_plus_uncovered",
+    "language": "en",
+    "question": "What is the bail process under RTI?",
+    "context": {"country": "India", "state": "Delhi", "category": "Criminal"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-11",
+    "module": "nyayasathi",
+    "category": "fake_section",
+    "language": "en",
+    "question": "What penalty applies under Section 888Z of the Consumer Protection Act?",
+    "context": {"country": "India", "state": "Bihar", "category": "Consumer Rights"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-12",
+    "module": "nyayasathi",
+    "category": "fake_section",
+    "language": "en",
+    "question": "What does Section 404B of the RTI Act state?",
+    "context": {"country": "India", "state": "Delhi", "category": "Other"},
+    "expected_status": "insufficient_information",
+    "expected_source_files": []
+  },
+  {
+    "id": "gr-13",
+    "module": "nyayasathi",
+    "category": "unrecognized_state",
+    "language": "en",
+    "question": "What are the tenant eviction rules under state rent control law?",
+    "context": {"country": "India", "state": "Atlantis", "category": "Property"},
+    "expected_status": "needs_clarification",
+    "expected_source_files": []
+  }
+]
